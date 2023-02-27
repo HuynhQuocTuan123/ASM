@@ -47,7 +47,7 @@ class ProductController extends AbstractController
      /**
      * @Route("/add", name="product_create")
      */
-    public function createAction(Request $req, SluggerInterface $slugger): Response
+    public function addProduct(Request $req, SluggerInterface $slugger): Response
     {
         
         $p = new Product();
